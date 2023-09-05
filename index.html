@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Fadedhood - Coming Soon
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-0BP5XhEQmIyT5Pd7F2tGUP0L6zpw+5pZQFVoF9RBdov+irUyoS7nEchjQuVw55Hgl+gmPtkN3zXU2og1az+dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<div class="hero">
+    <nav class="navbar">
+        <img src="images/logo.png" class="logo">
+        
+    </nav>
+
+    
+
+    <div class="content">
+        <h1>Our website is <span>coming soon!</span></h1>
+    </div> 
+         <div class="center-container">
+        <hr class="small-hr">
+        </div>
+ 
+            <!-- New container for the button -->
+    <div class="button-container" style=" display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; padding-top: 7%;">
+
+        <p class="p-above-button" style="padding-bottom: 1%; font-size: 16px; color: rgba(255, 255, 255, 0.856); ">Get notified through an email whenever the site is published!</p> 
+ <!-- Use anchor link to scroll to the email form section -->  
+ <a href="#email-form-section" class="slide-button" onclick="smoothScroll(event)">Notify me</a>       
+ <!-- <a href="#email-form-section" class="slide-button">Notify me</a> -->
+
+    </div>
+    <div class="links">
+        <a href="https://www.instagram.com/tech_faded"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="https://t.me/anonfaded"><img src="images/telegram.png" alt="Telegram"></a>
+    </div> 
+</div>
+
+
+<!-- modify this form HTML and place wherever you want your form -->
+<div id="email-form-section" class="container">
+<form
+  action="https://formspree.io/f/meqbowzj"
+  method="POST"
+>
+<center>
+<h4 style="margin-bottom: 10px; color: rgba(0, 0, 0, 0.671); " >Subscribe for updates</h4> </center>
+<hr class="small-hr" style="width: 70px; height: 2px; background-color: #353535a2; margin: 20px auto; border: none;">
+  <label>
+    Your email:<span class="required-star">*</span>
+    <div class="email-container">
+    <input type="email" name="email" placeholder="Enter your email" required oninvalid="setCustomValidity('Please enter a valid email address')" oninput="setCustomValidity('')" >
+</div>
+</label>
+  <label>
+    Message:
+        <div class="textarea-container">
+    <textarea name="message" placeholder="Got anything to say?" class="small-placeholder no-resize" ></textarea>
+        </div>
+</label>
+
+<p class="small-text">We'll notify you when our website goes live. <br>No spam, no promotional emails :)</p>
+
+  <!-- your other form fields go here -->
+  <button type="submit">Submit</button>
+</form>
+
+<!-- Scroll-to-top button -->
+<button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+<!-- javascript custom error code handling for invalid form submissions  -->
+<script src="custom-validation.js"></script>
+
+</div>
+
+
+
+
+
+
+<footer class="footer">
+    <p>All rights reserved 2023 &copy;  | FADEDHOOD </p>
+
+</footer>
+
+<script>
+    // JavaScript for smooth scrolling
+    function smoothScroll(event) {
+      event.preventDefault();
+      const targetId = event.target.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      targetElement.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+  <script>
+  // Show/hide the scroll-to-top button based on the scroll position
+window.addEventListener('scroll', () => {
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = 'block';
+  } else {
+    scrollToTopBtn.style.display = 'none';
+  }
+});
+
+// Scroll to the top when the button is clicked
+document.getElementById('scrollToTopBtn').addEventListener('click', () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
+</script>
+
+</body>
+</html>

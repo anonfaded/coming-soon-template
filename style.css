@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100vw;
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.877),rgba(0, 0, 0, 0.877)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+    text-align: center;
+    color: #fff;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: #080808; /* Set the background color for the navbar */
+    padding: 0px;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 200px; /* Adjust the width of your logo */
+    padding-left: 3%;
+    padding-top: 2%;
+  }
+  
+.content{
+    margin: 15% auto 0;
+}
+.content h1{
+    font-size: 65px;
+    font-weight: 400;
+
+}
+.content h1 span{
+    font-weight: 700;
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a black shadow to the text */
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+  }
+.small-hr {
+    height: 1px; /* Set the height to adjust the size of the <hr> */
+    border: none; /* Remove the default border */
+    background-color: #979797; /* Set the color of the <hr> */
+    width: 350px;
+
+}
+  /* New styles for the action to call button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+/* Style for the scroll button below the social icons */
+.slide-button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.8s ease; /* Add a transition for smooth animation */
+}
+/* Hover effect for the slide-button */
+.slide-button:hover {
+  background-color: #9e0202; /* Darker background color on hover */
+}
+/* Additional styling for the <hr> in the "Subscribe for updates" section */
+.container hr {
+  background-color: #353535a2; /* Color for the <hr> in the "Subscribe for updates" section */
+}
+                                                /* The below css is for email form  */
+/* Basic form styling */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #050505;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Input and textarea styles */
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Add styling to the required star */
+.required-star {
+  color: #ff0000; /* Red color */
+  margin-left: 5px;
+}
+/* Style for the smaller placeholder in textarea */
+textarea.small-placeholder::placeholder {
+  font-size: 14px; /* Adjust the font size as needed */
+}
+/* Style for the small text message */
+.small-text {
+  font-size: 12px;
+  color: #0f0f0f;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  opacity: 60%;
+}
+/* Prevent textarea resizing */
+textarea.no-resize {
+  resize: none;
+  height: 150px; /* Set a fixed height for the textarea */
+  padding: 10px; /* Add padding to the textarea for a better appearance */
+  border: 1px solid #ccc; /* Add the same border as the email input */
+  border-radius: 4px; /* Add the same border-radius as the email input */
+}
+/* Style for the email-box container */
+.email-container {
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  /* box-shadow : 2px 2px 4px rgba(0, 0, 0, 0.5); Add a black shadow to the text , here is an error that the shadow shows another box at bottom and is not applied to the full box*/
+
+  /* background-color: #050505; */
+  /* overflow: hidden;  /* Hide any overflowing content, this only outlines the bottom of the box and prevent from the full box to highlight when clicked */
+}
+/* Remove outline from all input and textarea elements */
+/* input:focus,
+textarea:focus {
+  outline: none;
+} */
+/* Style for the textarea container */
+.textarea-container {
+  border: 0px solid #ccc;
+  border-radius: 4px;
+ /* overflow: hidden; /* Hide any overflowing content */ 
+}
+/* Button style */
+button[type="submit"] {
+  background-color: #ff0000; /* Your red color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+  background-color: #cc0000; /* Slightly darker red on hover */
+}
+
+/* Optional: Form labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Optional: Center align the form on the page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141414; /* Set a light background color */
+}
+
+
+
+
+
+
+
+
+
+/* Styles for the footer */
+.footer {
+    background-color: #0c0c0c;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    pointer-events: none; /* Disable mouse events on the footer */
+  }
+  
+  /* Styles for the footer text */
+  .footer p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Styles for the footer link */
+  .footer a {
+    color: #fff; /* Set link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Styles for the footer link on hover */
+  .footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #fff; /* Set link color on hover */
+  }
+  
+  .links{
+    margin-top: 5%; /*social media links*/
+}
+.links a{
+    margin: 0%;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Add a transition for smooth animation */
+    
+}
+.links a img{
+    width: 30px;
+}
+/* Add the hover effect */
+.links a:hover {
+    transform: translateY(-5px); /* Adjust the value to control the pop-up distance */
+  }
+
+  /* Styles for the scroll-to-top button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
+
+
+  /* Media query for mobile devices */
+@media (max-width: 768px) {
+    .content h1 {
+      font-size: 35px; /* Adjust the font size for mobile screens */
+      margin-top: 70%;
+    }
+    .content {
+        margin-top: 10%; /* Reduce the top margin for the h1 heading on mobile */
+      }
+    .button-container{
+      margin-top: 7%;
+        }
+    .p-above-button{
+      margin-bottom: 5%;
+    }
+      .links {
+        margin-top: 15%; /* Reduce the top margin for social icons on mobile */
+      }
+    
+      .small-hr {
+        width: 200px; /* Reduce the width of the <hr> on mobile */
+        margin-top: 5%;
+      }
+      .footer{
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
